@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>聊天DEMO</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="icon" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../assets/css/app-e153f9e174.css">
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.3.3/vue.min.js"></script>
+<script type="text/javascript" src="../assets/js/im-367a55ae78.js"></script>
+</head>
+<body>
+<div id="chat"></div>
+<div class="chat-panel">
+	<div class="chat-title">聊天DEMO</div>
+	<div class="chat-main">
+		<div class="chat-body">
+			<!-- 聊天面板 -->
+			<div class="chat-tab-content chat-show">
+				<ul class="chat-friend-list">
+					<li class="chat-friend-item">
+						<img class="chat-friend-logo" src="../assets/images/c.jpg">
+						<span class="chat-friend-name">夏尤涛</span>
+						<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+						<span class="chat-msg-status chat-show">1</span>
+					</li>
+					<li class="chat-friend-item">
+						<img class="chat-friend-logo" src="../assets/images/c.jpg">
+						<span class="chat-friend-name">夏尤涛</span>
+						<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+						<span class="chat-msg-status chat-show">1</span>
+					</li>
+				</ul>
+			</div>
+			<!-- 好友面板 -->
+			<div class="chat-tab-content">
+				<ul class="chat-tools-list">
+					<li class="chat-tools-item">
+						<i class="chat-tools-icon icon-add"></i>新的朋友
+					</li>
+					<li class="chat-tools-item">
+						<i class="chat-tools-icon icon-group"></i>群聊
+					</li>
+				</ul>
+				<div class="chat-friend-box">
+					<div class="chat-friend-panel panel-show">
+						<h5 class="chat-panel-name">
+							<i class="chat-panel-icon"></i>
+							<span>我的好友</span>
+							<em>(<cite class="chat-count">5</cite>)</em>
+						</h5>
+						<ul class="chat-friend-list">
+							<li class="chat-friend-item">
+								<img class="chat-friend-logo" src="../assets/images/c.jpg">
+								<span class="chat-friend-name">夏尤涛</span>
+								<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+								<span class="chat-msg-status chat-show">1</span>
+							</li>
+							<li class="chat-friend-item">
+								<img class="chat-friend-logo" src="../assets/images/c.jpg">
+								<span class="chat-friend-name">夏尤涛</span>
+								<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+								<span class="chat-msg-status">1</span>
+							</li>
+						</ul>
+					</div>
+					<div class="chat-friend-panel panel-show">
+						<h5 class="chat-panel-name">
+							<i class="chat-panel-icon"></i>
+							<span>我的同学</span>
+							<em>(<cite class="chat-count">5</cite>)</em>
+						</h5>
+						<ul class="chat-friend-list">
+							<li class="chat-friend-item">
+								<img class="chat-friend-logo" src="../assets/images/c.jpg">
+								<span class="chat-friend-name">夏尤涛</span>
+								<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+								<span class="chat-msg-status">1</span>
+							</li>
+							<li class="chat-friend-item">
+								<img class="chat-friend-logo" src="../assets/images/c.jpg">
+								<span class="chat-friend-name">夏尤涛</span>
+								<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+								<span class="chat-msg-status">1</span>
+							</li>
+							<li class="chat-friend-item">
+								<img class="chat-friend-logo" src="../assets/images/c.jpg">
+								<span class="chat-friend-name">夏尤涛</span>
+								<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+								<span class="chat-msg-status">1</span>
+							</li>
+							<li class="chat-friend-item">
+								<img class="chat-friend-logo" src="../assets/images/c.jpg">
+								<span class="chat-friend-name">夏尤涛</span>
+								<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+								<span class="chat-msg-status">1</span>
+							</li>
+							<li class="chat-friend-item">
+								<img class="chat-friend-logo" src="../assets/images/c.jpg">
+								<span class="chat-friend-name">夏尤涛</span>
+								<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+								<span class="chat-msg-status">1</span>
+							</li>
+							<li class="chat-friend-item">
+								<img class="chat-friend-logo" src="../assets/images/c.jpg">
+								<span class="chat-friend-name">夏天</span>
+								<p class="chat-friend-sign">历史没有真相，只残存一个道理</p>
+								<span class="chat-msg-status">1</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 设置面板 -->
+			<div class="chat-tab-content">
+				<ul class="chat-setting-list">
+					<li class="chat-setting-item">
+						<i class="chat-setting-icon icon-find"></i>
+						发现
+						<i class="chat-new"></i>
+					</li>
+					<li class="chat-setting-item">
+						<i class="chat-setting-icon icon-share"></i>
+						分享与邀请
+						<i class="chat-new"></i>
+					</li>
+					<li class="chat-setting-item">
+						<i class="chat-setting-icon icon-about"></i>
+						关于
+						<i class="chat-new"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<ul class="chat-tab">
+			<li class="chat-tab-item cur">
+				<i class="chat-tab-icon icon-message"></i>
+				<span>消息</span>
+				<i class="chat-new chat-show"></i>
+			</li>
+			<li class="chat-tab-item">
+				<i class="chat-tab-icon icon-friend"></i>
+				<span>联系人</span>
+				<i class="chat-new"></i>
+			</li>
+			<li class="chat-tab-item">
+				<i class="chat-tab-icon icon-more"></i>
+				<span>更多</span>
+				<i class="chat-new"></i>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

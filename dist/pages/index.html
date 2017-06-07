@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>主面板</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="icon" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../assets/css/app-e153f9e174.css">
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.3.3/vue.min.js"></script>
+<script type="text/javascript" src="../plugins/template-web.js"></script>
+<script type="text/javascript" src="../assets/js/im-367a55ae78.js"></script>
+</head>
+<body>
+<div id="tpl-box"></div>
+<div id="page-box"></div>
+<script type="text/javascript">
+IM.config({
+	title : '聊天DEMO',
+	init : {
+		mine : {
+			id : '001',
+			userid : 'xiayoutao',
+			username : '夏尤涛',
+			sex : 0,
+			status : 0,
+			avatar : 'http://tva1.sinaimg.cn/crop.0.0.180.180.180/7fde8b93jw1e8qgp5bmzyj2050050aa8.jpg',
+			signature : '怀着希望去努力，静待美好的出现',
+			address : '广东省广州市',
+		},
+		friend : [{
+			id : '1',
+			groupname : '我的好友',
+			list : [{
+				id : '100001',
+				username : '夏雪',
+				avatar : 'http://tva1.sinaimg.cn/crop.0.0.180.180.180/7fde8b93jw1e8qgp5bmzyj2050050aa8.jpg',
+				signature : '历史没有真相，只残存一个道理'
+			},{
+				id : '10002',
+				username : '夏天2',
+				avatar : 'http://tva1.sinaimg.cn/crop.0.0.512.512.180/6a4acad5jw8eqi6yaholjj20e80e8t9f.jpg',
+				signature : '怀着希望去努力，静待美好的出现'
+			},{
+				id : '10003',
+				username : '夏天3',
+				avatar : 'http://tva4.sinaimg.cn/crop.0.0.640.640.180/4a02849cjw8fc8vn18vktj20hs0hs75v.jpg',
+				signature : '历史没有真相，只残存一个道理'
+			},{
+				id : '10004',
+				username : '夏天4',
+				avatar : 'http://tva4.sinaimg.cn/crop.0.0.180.180.180/6d424ea5jw1e8qgp5bmzyj2050050aa8.jpg',
+				signature : '怀着希望去努力，静待美好的出现'
+			},{
+				id : '10005',
+				username : '夏天5',
+				avatar : 'http://tva3.sinaimg.cn/crop.0.0.750.750.180/5033b6dbjw8etqysyifpkj20ku0kuwfw.jpg',
+				signature : '世界上最短的咒语是你的名字'
+			}]
+		},{
+			id : '2',
+			groupname : '我的同学',
+			list : [{
+				id : '20001',
+				username : '夏天21',
+				avatar : 'http://tva1.sinaimg.cn/crop.0.0.180.180.180/7fde8b93jw1e8qgp5bmzyj2050050aa8.jpg',
+				signature : '世界上最短的咒语是你的名字'
+			},{
+				id : '20002',
+				username : '夏天22',
+				avatar : 'http://tva4.sinaimg.cn/crop.0.0.180.180.180/6d424ea5jw1e8qgp5bmzyj2050050aa8.jpg',
+				signature : '怀着希望去努力，静待美好的出现'
+			},{
+				id : '20003',
+				username : '夏天23',
+				avatar : 'http://tva3.sinaimg.cn/crop.0.0.750.750.180/5033b6dbjw8etqysyifpkj20ku0kuwfw.jpg',
+				signature : '历史没有真相，只残存一个道理'
+			}]
+		},{
+			id : '3',
+			groupname : '我的同事',
+			list : [{
+				id : '30001',
+				username : '夏天31',
+				avatar : 'http://tva1.sinaimg.cn/crop.0.0.180.180.180/7fde8b93jw1e8qgp5bmzyj2050050aa8.jpg',
+				signature : '世界上最短的咒语是你的名字'
+			},{
+				id : '30002',
+				username : '夏天32',
+				avatar : 'http://tva4.sinaimg.cn/crop.0.0.180.180.180/6d424ea5jw1e8qgp5bmzyj2050050aa8.jpg',
+				signature : '怀着希望去努力，静待美好的出现'
+			},{
+				id : '30003',
+				username : '夏天33',
+				avatar : 'http://tva3.sinaimg.cn/crop.0.0.750.750.180/5033b6dbjw8etqysyifpkj20ku0kuwfw.jpg',
+				signature : '历史没有真相，只残存一个道理'
+			}]
+		}]
+	},
+	moreList : [{
+		alias : 'find',
+		title : '发现',
+		iconClass : 'icon-find',
+	},{
+		alias : 'share',
+		title : '分享与邀请',
+		iconClass : 'icon-share',
+	},{
+		alias : 'about',
+		title : '关于',
+		iconClass : 'icon-about',
+	}]
+});
+var autoReplay = [
+    '您好，我现在有事不在，一会再和您联系。', 
+    '你没发错吧？',
+    '洗澡中，请勿打扰，偷窥请购票，个体四十，团体八折，订票电话：一般人我不告诉他！',
+    '你好，我是主人的美女秘书，有什么事就跟我说吧，等他回来我会转告他的。',
+    '你怎么回事？',
+    '<（@￣︶￣@）>',
+    '你要和我说话？你真的要和我说话？你确定自己想说吗？你一定非说不可吗？那你说吧，这是自动回复。',
+    '你慢慢说，别急……',
+    '(*^__^*) ，是贤心吗？'
+];
+
+
+//模拟收到一条好友消息
+setTimeout(function(){
+    IM.getMessage({
+        username: "夏雪",
+        avatar: "http://tva1.sinaimg.cn/crop.0.0.180.180.180/7fde8b93jw1e8qgp5bmzyj2050050aa8.jpg",
+        id: "100001",
+    	type: "friend",
+    	cid: Math.random()*100000|0, //模拟消息id，会赋值在li的data-cid上，以便完成一些消息的操作（如撤回），可不填
+    	content: "演示标记："+ new Date().getTime() +'嗨，欢迎体验LayIM。'
+    });
+}, 2000);
+
+//监听发送消息
+IM.on('sendMessage', function(data){
+    var To = data.to;
+
+    //演示自动回复
+    setTimeout(function(){
+    	var obj = {};
+        if(To.type === 'group'){
+        	obj = {
+	        	username: '模拟群员'+(Math.random()*100|0),
+	        	avatar: layui.cache.dir + 'images/face/'+ (Math.random()*72|0) + '.gif',
+	        	id: To.id,
+	        	type: To.type,
+	        	content: autoReplay[Math.random()*9|0],
+        	}
+        } else {
+	        obj = {
+	        	username: To.name,
+	        	avatar: To.avatar,
+	        	id: To.id,
+	        	type: To.type,
+	        	content: autoReplay[Math.random()*9|0]
+	        }
+    	}
+    	IM.getMessage(obj);
+    }, 1000);
+});
+</script>
+</body>
+</html>
